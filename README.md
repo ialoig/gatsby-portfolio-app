@@ -5,40 +5,44 @@
   </a>
 </p>
 <h1 align="center">
-  Gatsby's hello-world starter
+  Gatsby's Portfolio Project
 </h1>
 
-Kick off your project with this hello-world boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+Starting from [gatsby-hello-world-starter](https://github.com/gatsbyjs/gatsby-starter-hello-world) I've create a portfolio website, based on style of [delog-starter]() and modified some behaviours.
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
 
 ## 🚀 Quick start
+1.  **Install Gatsby CLI**
 
-1.  **Create a Gatsby site.**
+    ```shell
+    $ npm install -g gatsby-cli
+    ```
+
+2.  **Create a Gatsby site.**
 
     Use the Gatsby CLI to create a new site, specifying the hello-world starter.
 
     ```shell
     # create a new Gatsby site using the hello-world starter
-    gatsby new my-hello-world-starter https://github.com/gatsbyjs/gatsby-starter-hello-world
+    gatsby new gatsby-portfolio-app https://github.com/gatsbyjs/gatsby-starter-hello-world
     ```
 
-1.  **Start developing.**
+3.  **Start developing.**
 
     Navigate into your new site’s directory and start it up.
 
     ```shell
-    cd my-hello-world-starter/
+    cd gatsby-portfolio-app/
     gatsby develop
     ```
 
-1.  **Open the source code and start editing!**
+4.  **Open the source code and start editing!**
 
     Your site is now running at `http://localhost:8000`!
 
     _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
 
-    Open the `my-hello-world-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+    Open the `gatsby-portfolio-app` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
 
 ## 🧐 What's inside?
 
@@ -47,6 +51,8 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
     .
     ├── node_modules
     ├── src
+    ├──── pages
+    ├──── styles
     ├── .gitignore
     ├── .prettierrc
     ├── gatsby-browser.js
@@ -61,6 +67,10 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
 
 2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+
+2.  **`/src/pages`**: Contains all the pages defined for the websites.
+
+2.  **`/src/styles`**: Contains sass file that define a global style for the website.
 
 3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
 
@@ -82,18 +92,39 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 12. **`README.md`**: A text file containing useful reference information about your project.
 
-## 🎓 Learning Gatsby
+## :triangular_flag_on_post: Features
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
+- Integration with Github GraphQL API
+- Sass style plugins
 
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+##  :mortar_board: What I've learn
 
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+✅ Import from gatsby-hello-world-starter.
 
-## 💫 Deploy
+✅ Import plugins and include it into app.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-hello-world)
+✅ Creating nested layout components.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/gatsbyjs/gatsby-starter-hello-world)
+✅ Creating global style with sass file.
 
-<!-- AUTO-GENERATED-CONTENT:END -->
+✅ Data usage in Gatsby with GraphQL.
+
+✅ Data usage in Gatsby using static queries.
+
+
+## 📋 Todo
+
+🔲 Use GraphQL to get projects from Github GraphQL API.
+
+🔲 Footer style
+
+🔲 Definition of index style
+
+🔲 Creation of contact form
+
+🔲 Achor link for about, contact & projects sections
+
+🔲 
+
+🔲 
+
