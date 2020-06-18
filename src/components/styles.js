@@ -73,9 +73,6 @@ export const Card = styled.div`
   }
 `;
 
-
-
-
 export const Content = styled.div`
   padding: 1rem 0;
 `;
