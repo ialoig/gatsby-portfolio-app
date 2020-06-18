@@ -51,6 +51,10 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
     .
     ├── node_modules
     ├── src
+    ├──── components
+    ├─────── common
+    ├─────── landing
+    ├──── data
     ├──── pages
     ├──── styles
     ├── .gitignore
@@ -67,6 +71,11 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
 
 2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+
+2.  **`/src/components`**: Contains React components to be rendered.
+
+      1. **`/src/components/common`**: Contains React common components used.
+      2. **`/src/components/landing`**: Contains React components used in pages.
 
 2.  **`/src/pages`**: Contains all the pages defined for the websites.
 
@@ -92,39 +101,38 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 12. **`README.md`**: A text file containing useful reference information about your project.
 
-## :triangular_flag_on_post: Features
+## :dart: Features
 
-- Integration with Github GraphQL API
-- Sass style plugins
+:round_pushpin: Sass style plugin
+
+:round_pushpin: Integration with Github GraphQL API
+
+:round_pushpin: Manage all of your changes to the document head with React-Helmet plugin
+
+:round_pushpin: Simple project structure definition
 
 ##  :mortar_board: What I've learn
 
-✅ Import from gatsby-hello-world-starter.
+:white_check_mark: Import from gatsby-hello-world-starter.
 
-✅ Import plugins and include it into app.
+:white_check_mark: Import plugins and include it into the application.
 
-✅ Creating nested layout components.
+:white_check_mark: Creating nested layout components.
 
-✅ Creating global style with sass file.
+:white_check_mark: Creating global style with sass file.
 
-✅ Data usage in Gatsby with GraphQL.
+:white_check_mark: Data usage in Gatsby with GraphQL.
 
-✅ Data usage in Gatsby using static queries.
+:white_check_mark: Data usage in Gatsby using static queries.
+
+:white_check_mark: How to define a project structure clear and simple.
 
 
 ## 📋 Todo
 
-🔲 Use GraphQL to get projects from Github GraphQL API.
+:black_square_button: Footer style
 
-🔲 Footer style
+:black_square_button: Creation of contact form
 
-🔲 Definition of index style
-
-🔲 Creation of contact form
-
-🔲 Achor link for about, contact & projects sections
-
-🔲 
-
-🔲 
+:black_square_button: Achor link for about, contact & projects sections
 

@@ -1,3 +1,4 @@
+const config = require('./src/data/config');
 
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
@@ -11,8 +12,9 @@ module.exports = {
   /* gatsby sass plugin */
   plugins: [
     `gatsby-plugin-sass`,
-    //styled components: lets you use actual CSS syntax inside your components
-    `gatsby-plugin-styled-components`,
+    //With this plugin, attributes you add in their component, 
+    //e.g. title, meta attributes, etc. will get added to the static HTML pages Gatsby builds.
+    'gatsby-plugin-react-helmet',
   {
     resolve: "gatsby-source-graphql",
     options: {

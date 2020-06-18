@@ -1,12 +1,11 @@
 import React from "react"
-import {useStaticQuery} from "gatsby"
-import { graphql } from 'gatsby'
-import {Grid, Item, Card, Content} from "./styles"
+import { graphql, useStaticQuery } from 'gatsby'
+import Layout from "../components/common/Layout"
 
 
 export default function Projects() {
     
-    //using static query cause Layout is not a page component,
+    //using static query cause Projects is not a page component,
     //and is not possible to use GraphQL queries
     const data = useStaticQuery(
         graphql`
@@ -33,20 +32,22 @@ export default function Projects() {
         repositories: data.github.viewer.repositories.edges
     }
     return(
-        <div>
+        <Layout>
             <h1>Projects</h1>
-            <Grid>
+            <div className="grids">
                 {repo.repositories.map(obj => 
-                    <Item key={obj.node.id} as="a" href={obj.node.url} target="_blank" rel="noopener noreferrer">
-                        <Card>
-                            <Content>
-                                <h4>{obj.node.name}</h4>
-                                <p>{obj.node.description}</p>
-                            </Content>
-                        </Card>
-                    </Item>
-                )}
-            </Grid>
-        </div>
+                <article className="card" key={obj.node.id}>
+                    <header>
+                        <h2 className="prj-title">
+                            <a href={obj.node.url} target="_blank"rel="noopener noreferrer" className="prj-link">
+                                {obj.node.name}
+                            </a>
+                        </h2>
+                        <div className="prj-meta">{obj.node.description}</div>
+                    </header>
+                </article>
+            )}
+            </div>
+        </Layout>
     )
 }

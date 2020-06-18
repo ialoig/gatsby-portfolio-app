@@ -1,26 +1,14 @@
 import React from "react"
-import Layout from "../components/layout"
-import Projects from "../components/projects"
+import SEO from "../components/common/SEO"
+import Layout from "../components/common/Layout"
+import About from "../components/landing/About"
 
 
-export default function Home({data}) {
+export default function Home() {
 	return (
 		<Layout>
-			<title>{data.site.siteMetadata.title}</title>
-			<h1>Index page</h1>
-
-      <Projects />
+      <SEO />
+      <About />
 		</Layout>
     )
 }
-
-
-export const query = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`

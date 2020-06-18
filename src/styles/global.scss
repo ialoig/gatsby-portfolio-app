@@ -4,6 +4,29 @@ html,
 body {
     margin: 0;
     padding: 0;
+    --primary-color: #381696;
+    --primary-text-color: #fff;
+    --featured-bg: #493b8a;
+    --featured-text: #fff;
+    --secondary-color: #10072b;
+    --background: #fff;
+    --site-header: var(--background);
+    --card-bg: #fff;
+    --card-bdr: #eee;
+    --card-shadow: #d5d5d5;
+    --btn-bg: var(--background);
+    --btn-bdr: #d3d6e7;
+    --btn-text-color: #868892;
+    --btn-hover-bg: var(--btn-bdr);
+    --btn-hover-text-color: #00062b;
+    --contact-bg: #f7f8fe;
+    --contact-bdr: #d3d6e7;
+    --input-bg: var(--background);
+
+    font-family: $font-family;
+    border-top: 10px solid var(--primary-color);
+    background-color: var(--background);
+    color: var(--text-color);
 }
 * {
     margin-top: 0
@@ -49,4 +72,93 @@ a {
     &:hover {
       text-decoration: underline;
     }
-  }
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    a {
+      color: #888;
+      text-decoration: none;
+      margin: 0 8px 0;
+      &[aria-current] {
+        color: var(--primary-color);
+        font-weight: 700;
+      }
+      &:hover {
+        color: var(--primary-color);
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+}
+
+.headline {
+    font-size: 36px;
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+}
+
+.card {
+    display: grid;
+    background-color: var(--card-bg);
+    border-radius: 9px;
+    border: 1px solid var(--card-bdr);
+    box-shadow: 0 0 30px var(--card-shadow);
+    overflow: hidden;
+    line-height: 1.5;
+    &:hover .prj-link {
+      color: var(--primary-color);
+    }
+    > a img {
+      display: block;
+    }
+    > header {
+      padding: 24px;
+    }
+    > h2:first-child {
+      margin: 0 0 0.5rem 0;
+    }
+    .prj-title {
+      font-size: 1.2rem;
+      margin-bottom: 0.3rem;
+    }
+    .prj-meta {
+      font-weight: 100;
+      margin-bottom: 0;
+    }
+    .prj-link {
+      color: var(--text-color);
+      text-decoration: none;
+    }
+}
+
+.prj-meta {
+    font-size: 0.8rem;
+    color: var(--text-secondary-color);
+}
+
+.grids {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+    margin-top: 32px;
+}
+/* Portrait and Landscape */
+@media only screen and (min-width: 768px) {
+    .grids {
+    grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .grids {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .two-grids {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 64px;
+    }
+}
