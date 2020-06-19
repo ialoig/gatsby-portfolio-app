@@ -15,6 +15,39 @@ module.exports = {
     //With this plugin, attributes you add in their component, 
     //e.g. title, meta attributes, etc. will get added to the static HTML pages Gatsby builds.
     'gatsby-plugin-react-helmet',
+    //To automatically create pages with .mdx from other sources
+    {
+      resolve: "gatsby-plugin-page-creator",
+      options: {
+        path: `${__dirname}/content/posts`,
+      },
+    },
+    //support for mdx files (markdown file with the support of jsx)
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.mdx`, `.md`],
+        defaultLayouts: {
+          posts: require.resolve("./src/components/common/Templates/posts-layout.js"),
+          default: require.resolve("./src/components/common/Templates/default-page-layout.js"),
+        },
+      }
+    },
+    //process local markdown files in order to generate the resulting Gatsby nodes
+    // {
+    //   resolve: 'gatsby-source-filesystem',
+    //   options: {
+    //     name: "pages",
+    //     path: `${__dirname}/src/pages/`,
+    //   }
+    // },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: "posts",
+        path: `${__dirname}/content/posts`,
+      }
+    },
   {
     resolve: "gatsby-source-graphql",
     options: {

@@ -111,6 +111,8 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 :round_pushpin: Simple project structure definition
 
+:round_pushpin: Support for Markdown file
+
 ##  :mortar_board: What I've learn
 
 :white_check_mark: Import from gatsby-hello-world-starter.
@@ -130,7 +132,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 ## 📋 Todo
 
-:black_square_button: Footer style
+:black_square_button: Define a template for posts
 
 :black_square_button: Creation of contact form
 

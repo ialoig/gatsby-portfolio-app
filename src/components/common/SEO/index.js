@@ -18,16 +18,16 @@ export default function SEO() {
 
     return(
         <Helmet>
-        <meta name="description" content={defaultDescription} />
+            <meta name="description" content={defaultDescription} />
 
-        <meta property="og:url" content={`${url}`} />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content={defaultTitle} />
-        <meta property="og:description" content={defaultDescription} />
-        
-        <script type="application/ld+json">{structuredDataOrganization}</script>
-        <title>{defaultTitle}</title>
-        <html lang="en" dir="ltr" />
+            <meta property="og:url" content={`${url}`} />
+            <meta property="og:type" content="website" />
+            <meta property="og:title" content={defaultTitle} />
+            <meta property="og:description" content={defaultDescription} />
+            
+            <script type="application/ld+json">{structuredDataOrganization}</script>
+            <title>{defaultTitle}</title>
+            <html lang="en" dir="ltr" />
         </Helmet>
     )
 }

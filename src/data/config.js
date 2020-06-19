@@ -8,6 +8,6 @@ module.exports = {
     socialLinks: {
         github: 'https://github.com/ialoig'
     },
-    foundingDate: "",
+    foundingDate: "2020",
     labelSite: "IaLoiG",
 };

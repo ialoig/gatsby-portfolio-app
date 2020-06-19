@@ -4,18 +4,18 @@ html,
 body {
     margin: 0;
     padding: 0;
-    --primary-color: #381696;
+    --primary-color: #184d47;
     --primary-text-color: #fff;
     --featured-bg: #493b8a;
     --featured-text: #fff;
     --secondary-color: #10072b;
-    --background: #fff;
+    --background: #d6efc7;
     --site-header: var(--background);
-    --card-bg: #fff;
-    --card-bdr: #eee;
-    --card-shadow: #d5d5d5;
+    --card-bg: #eebb4d;
+    //--card-bdr: #eee;
+    //--card-shadow: #184d47;
     --btn-bg: var(--background);
-    --btn-bdr: #d3d6e7;
+    --btn-bdr: #184d47;
     --btn-text-color: #868892;
     --btn-hover-bg: var(--btn-bdr);
     --btn-hover-text-color: #00062b;
@@ -70,7 +70,7 @@ a {
     color: var(--primary-color);
     text-decoration: none;
     &:hover {
-      text-decoration: underline;
+        color: var(--primary-color);
     }
 }
 
