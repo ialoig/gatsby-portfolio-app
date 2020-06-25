@@ -2,7 +2,6 @@ import React from "react"
 import { graphql } from 'gatsby'
 import Layout from "../components/common/Layout"
 
-
 export default function Projects({ data }) {
     
     const repo = data.github.viewer.repositories.edges
@@ -20,6 +19,11 @@ export default function Projects({ data }) {
                             </a>
                         </h2>
                         <div className="prj-meta">{obj.node.description}</div>
+                        <br/>
+
+                        {/* css inline style to change color; getting the color from query */}
+                        <div style={{backgroundColor: obj.node.primaryLanguage.color}} className="prj-language-color"></div>
+                        <span className="prj-meta"> {obj.node.primaryLanguage.name}</span>
                     </header>
                 </article>
             )}
@@ -37,9 +41,12 @@ export const pageQuery = graphql`
                         node {
                             id
                             name
-                            updatedAt
                             description
                             url
+                            primaryLanguage {
+                                name
+                                color
+                            }
                         }
                     }
                 }

@@ -19,7 +19,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-page-creator",
       options: {
-        path: `${__dirname}/content/posts`,
+        path: `${__dirname}/content/`,
       },
     },
     //support for mdx files (markdown file with the support of jsx)
@@ -33,14 +33,6 @@ module.exports = {
         },
       }
     },
-    //process local markdown files in order to generate the resulting Gatsby nodes
-    // {
-    //   resolve: 'gatsby-source-filesystem',
-    //   options: {
-    //     name: "pages",
-    //     path: `${__dirname}/src/pages/`,
-    //   }
-    // },
     {
       resolve: 'gatsby-source-filesystem',
       options: {

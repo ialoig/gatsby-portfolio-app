@@ -12,6 +12,7 @@ body {
     --background: #d6efc7;
     --site-header: var(--background);
     --card-bg: #eebb4d;
+    --link-underline: #96bb7c;
     //--card-bdr: #eee;
     //--card-shadow: #184d47;
     --btn-bg: var(--background);
@@ -85,6 +86,7 @@ a {
       &[aria-current] {
         color: var(--primary-color);
         font-weight: 700;
+        box-shadow: inset 0 -6px 0 0 var(--link-underline);
       }
       &:hover {
         color: var(--primary-color);
@@ -130,8 +132,19 @@ a {
       margin-bottom: 0;
     }
     .prj-link {
-      color: var(--text-color);
       text-decoration: none;
+      box-shadow: inset 0 -7px 0 0 var(--link-underline);
+      &:hover {
+        box-shadow: inset 0 -40px 0 0 var(--link-underline);
+      }
+    }
+    .prj-language-color {
+      position: relative;
+      top: 1px;
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
     }
 }
 
