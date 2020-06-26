@@ -28,8 +28,8 @@ module.exports = {
       options: {
         extensions: [`.mdx`, `.md`],
         defaultLayouts: {
-          posts: require.resolve("./src/components/common/Templates/posts-layout.js"),
-          default: require.resolve("./src/components/common/Templates/default-page-layout.js"),
+          posts: require.resolve("./src/templates/posts-layout.js"),
+          default: require.resolve("./src/templates/posts-layout.js"),
         },
       }
     },
