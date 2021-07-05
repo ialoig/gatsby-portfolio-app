@@ -1,7 +1,7 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
+  <a href="https://www.gatsbyjs.com/docs/quick-start/">
+    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
   </a>
 </p>
 <h1 align="center">
@@ -113,7 +113,7 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 :round_pushpin: Support for Markdown file
 
-##  :mortar_board: What I've learn
+##  :mortar_board: What I've learned
 
 :white_check_mark: Import from gatsby-hello-world-starter.
 
