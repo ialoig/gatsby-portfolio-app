@@ -4,7 +4,7 @@ module.exports = {
     author: 'Giovanni Lai',
     url: 'https://github.com/ialoig',
     legalName: 'Giovanni Lai',
-    defaultDescription: 'I’m Giovanni and I’m a Front-End Developer!',
+    defaultDescription: 'I’m Giovanni and I’m a Product MAnager!',
     socialLinks: {
         github: 'https://github.com/ialoig'
     },
