@@ -20,7 +20,9 @@ export default function Layout ({children}) {
                 <Navigation/>
             </header>
 
-            {children}
+            <div className="site-content">
+                {children}
+            </div>
             
             <Footer/>
         </div>

@@ -32,25 +32,25 @@ export default function Projects({ data }) {
     )
 }
 
-export const pageQuery = graphql`
-    query {
-        github {
-            viewer {
-                repositories(first: 6) {
-                    edges {
-                        node {
-                            id
-                            name
-                            description
-                            url
-                            primaryLanguage {
-                                name
-                                color
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-`
+// export const pageQuery = graphql`
+//     query {
+//         github {
+//             viewer {
+//                 repositories(first: 6) {
+//                     edges {
+//                         node {
+//                             id
+//                             name
+//                             description
+//                             url
+//                             primaryLanguage {
+//                                 name
+//                                 color
+//                             }
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// `

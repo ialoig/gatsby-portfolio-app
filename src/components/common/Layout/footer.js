@@ -8,7 +8,7 @@ export default function Footer() {
         <footer className="site-footer">
             <p>{foundingDate} | Made with
                 <span aria-label="love" role="img"> ❤️ </span>
-                by <a href={url} className="">{author}</a>
+                by <a href={url} className="" target={"_blank"}>{author}</a>
             </p>
         </footer>
     )

@@ -7,7 +7,7 @@ require("dotenv").config({
 module.exports = {
   /* definition of metadata for the site */
   siteMetadata: {
-    title: `IaLoiG portfolio`,
+    title: `ialoig portfolio`,
   },
   /* gatsby sass plugin */
   plugins: [
@@ -40,18 +40,19 @@ module.exports = {
         path: `${__dirname}/content/posts`,
       }
     },
-  {
-    resolve: "gatsby-source-graphql",
-    options: {
-      typeName: "GitHub",
-      fieldName: "github",
-      url: "https://api.github.com/graphql",
-      // HTTP headers
-      headers: {
-        Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
-      },
-      // Additional options to pass to node-fetch
-      fetchOptions: {}
-    }
-  }]
+  // {
+  //   resolve: "gatsby-source-graphql",
+  //   options: {
+  //     typeName: "GitHub",
+  //     fieldName: "github",
+  //     url: "https://api.github.com/graphql",
+  //     // HTTP headers
+  //     headers: {
+  //       Authorization: `Bearer ${process.env.GITHUB_TOKEN}`,
+  //     },
+  //     // Additional options to pass to node-fetch
+  //     fetchOptions: {}
+  //   }
+  // }
+]
 };
